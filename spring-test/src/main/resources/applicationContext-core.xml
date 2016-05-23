@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- spring扫描该包下所有类 -->
+	<context:component-scan base-package="com.test" >
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+
+	<bean class="com.test.service.Service1"/>
+	<bean class="com.test.service.Service1"/>
+	<bean id="service3" class="com.test.service.Service3" init-method="initMethod">
+		<property name="service4" ref="service4"/>
+	</bean>
+	<bean name="service4,service43;service44 service45" id="service42" class="com.test.service.Service4" >
+		<property name="service3" ref="service3"/>
+		<!--<property name="service6" ref="service64"/>-->
+	</bean>
+	<!--<bean id="service6" name="service61"  class="com.test.service.Service6" autowire="byName"/>
+	<alias name="service6" alias="service62"/>
+	<alias name="service61" alias="service63"/>
+	<alias name="service63" alias="service64"/>-->
+</beans>
