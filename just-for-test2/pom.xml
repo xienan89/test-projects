@@ -14,53 +14,13 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <dependencies>		
-		<!--<dependency>
-		  <groupId>com.xiaonei</groupId>
-		  <artifactId>xiaonei-core</artifactId>
-		  <version>1.0-SNAPSHOT</version>
-		</dependency>	-->
-		
-		
-		<!-- 给游戏中心传分数，暂时用一下  -->
-		<!-- <dependency>
-           <groupId>com.xiaonei</groupId>
-           <artifactId>renren-wap-fuxi-xoa-client</artifactId>
-           <version>1.0-SNAPSHOT</version>
-       </dependency>
-       <dependency>
-           <groupId>com.xiaonei</groupId>
-           <artifactId>renren-wap-fuxi-service-def</artifactId>
-           <version>1.0-SNAPSHOT</version>
-           <exclusions>
-              <exclusion>
-                  <groupId>com.renren</groupId>
-                  <artifactId>renren-wap-fuxi-model</artifactId>
-              </exclusion>
-              <exclusion>
-                  <groupId>com.xiaonei</groupId>
-                  <artifactId>renren-wap-ugc-blog-service</artifactId>
-              </exclusion>
-              <exclusion>
-                  <groupId>com.xiaonei</groupId>
-                  <artifactId>renren-wap-ugc-photo-service</artifactId>
-              </exclusion>
-              <exclusion>
-                  <groupId>com.xiaonei</groupId>
-                  <artifactId>renren-wap-ugc-share-service</artifactId>
-              </exclusion>
-           </exclusions>
-       </dependency> -->
-      <!-- <dependency>
-			<groupId>com.renren.tair</groupId>
-			<artifactId>tair-util</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>-->
-		<dependency>
-			<groupId>net.sf.json-lib</groupId>
-			<artifactId>json-lib</artifactId>
-			<version>2.2.1</version>
-		</dependency>
+  <dependencies>
+
+	  <dependency>
+		  <groupId>net.sf.json-lib</groupId>
+		  <artifactId>json-lib</artifactId>
+		  <version>2.2.1</version>
+	  </dependency>
 
 	  <!-- httpclient -->
 	  <dependency>
@@ -91,64 +51,7 @@
 		  <version>4.12</version>
 		  <scope>test</scope>
 	  </dependency>
-	  <!-- feed -->
-		<!--<dependency>
-			<groupId>com.xiaonei</groupId>
-			<artifactId>xiaonei-feed-api</artifactId>
-			<version>1.0-sns-user-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>jcl104-over-slf4j</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-ext</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.google.collections</groupId>
-					<artifactId>google-collections</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>com.xiaonei</groupId>
-			<artifactId>xiaonei-vip-base</artifactId>
-			<version>1.1-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.google.collections</groupId>
-					<artifactId>google-collections</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>com.renren</groupId>
-			<artifactId>renren-sns-wiki-xoa-api</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.xiaonei</groupId>
-			<artifactId>renren-sns-common</artifactId>
-			<version>1.0-sns-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.xiaonei</groupId>
-			<artifactId>xiaonei-status-service</artifactId>
-			<version>1.0-sns-user-rose-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.google.collections</groupId>
-					<artifactId>google-collections</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>com.renren.xoa2</groupId>
-		    <artifactId>mcs-channel-xoa2-api</artifactId>
-		    <version>1.0-SNAPSHOT</version>
-		</dependency>-->
-		    
+
   </dependencies>
    <build>
 	 	<plugins>

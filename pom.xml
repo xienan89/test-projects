@@ -10,6 +10,9 @@
 
     <modules>
         <module>spring-test</module>
+        <module>just-for-test2</module>
+        <module>util-crawler</module>
+        <module>utils-freemaker</module>
     </modules>
 
     <properties>
