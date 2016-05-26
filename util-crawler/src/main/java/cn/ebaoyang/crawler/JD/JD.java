@@ -38,6 +38,8 @@ public class JD {
 		
 		HttpResponse response = client.execute(httpPost);
 
+		System.out.println("status code: " +  response.getStatusLine().getStatusCode());
+
         GZIPInputStream in = null;
         in = new GZIPInputStream(response.getEntity().getContent());       
 
@@ -284,11 +286,11 @@ public class JD {
 
 	public static void main(String[] args) throws IOException, ParserException, InterruptedException {
 
-		//getIDs();
+		getIDs();
 		//mgetMahle("d:\\jd\\mahle_jilv.txt", "d:\\jd\\mahle_jilv_pic.txt");
 		//mgetMahle("d:\\jd\\mahle_kongqi.txt", "d:\\jd\\mahle_kongqi_pic.txt");
-		mgetHangst("d:\\jd\\hangst_jilv.txt", "d:\\jd\\hangst_jilv_pic.txt");	
-		mgetHangst("d:\\jd\\hangst_kongqi.txt", "d:\\jd\\hangst_kongqi_pic.txt");		
+		//mgetHangst("d:\\jd\\hangst_jilv.txt", "d:\\jd\\hangst_jilv_pic.txt");
+		//mgetHangst("d:\\jd\\hangst_kongqi.txt", "d:\\jd\\hangst_kongqi_pic.txt");
 		
 		/*getPrices("d:\\jd\\mahle_jilv.txt", "d:\\jd\\mahle_jilv_price.txt");
 		getPrices("d:\\jd\\mahle_kongqi.txt", "d:\\jd\\mahle_kongqi_price.txt");
