@@ -15,7 +15,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.ebay</groupId>
+      <groupId>com.test</groupId>
       <artifactId>just-for-test2</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
