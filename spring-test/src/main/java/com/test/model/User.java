@@ -13,6 +13,8 @@ public class User {
     long no;
     Date birthday;
 
+    public User(int id, String name){}
+
     static {
         System.out.println("user:" + ConstName);
     }

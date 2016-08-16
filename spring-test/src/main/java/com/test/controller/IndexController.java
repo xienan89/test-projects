@@ -36,11 +36,6 @@ public class IndexController {
     private ApplicationContext applicationContext;
     @Autowired
     private BeanFactory beanFactory;
-    @Autowired @Qualifier("com.test.service.Service1#1")
-    Service1 service1;
-
-/*    @Autowired @Qualifier("index2Controller")
-    Index2Controller index2Controller;*/
 
     @InitBinder
     public void initBinder(WebDataBinder binder) throws Exception {
