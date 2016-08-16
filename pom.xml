@@ -13,16 +13,10 @@
         <module>just-for-test2</module>
         <module>util-crawler</module>
         <module>utils-freemaker</module>
+        <module>tomcat-xlight-web</module>
     </modules>
 
     <properties>
         <spring.version>4.2.0.RELEASE</spring.version>
     </properties>
-
-    <repositories>
-        <repository>
-            <id>nexus</id>
-            <url>http://mvn.ebaoyang.com/nexus/content/groups/public/</url>
-        </repository>
-    </repositories>
 </project>
