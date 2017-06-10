@@ -16,7 +16,10 @@ public class IndexController {
     @RequestMapping("index")
     @ResponseBody
     public String index(){
-        byte[] bytes = new byte[100000];
-        return new String(bytes);
+        StringBuilder sb = new StringBuilder(100000);
+        for (int i = 0; i < 1000000; i++) {
+            sb.append('A');
+        }
+        return sb.toString();
     }
 }

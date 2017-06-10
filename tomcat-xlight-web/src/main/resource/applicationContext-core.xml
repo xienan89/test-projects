@@ -12,4 +12,24 @@
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 
+	<bean id="server" class="org.xlightweb.server.HttpServer" scope="singleton"
+		  init-method="start" destroy-method="close">
+		<constructor-arg value="8081" />
+		<constructor-arg ref="context" />
+		<property name="maxConcurrentConnections" value="10000" />
+	</bean>
+
+	<bean id="context" class="org.xlightweb.Context" scope="prototype">
+		<constructor-arg value="/TrafficService" />
+		<constructor-arg>
+			<map>
+				<entry key="/xlight">
+					<ref bean="xlightHandler" />
+				</entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean id="xlightHandler" class="com.autonavi.tinfo.XlightWebHandler" scope="prototype">
+	</bean>
 </beans>
