@@ -43,6 +43,8 @@ public class Client {
 		System.out.println(ret);
 
 		client.close();
+
+		System.out.println("done");
 	}
 
 }

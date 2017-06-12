@@ -47,6 +47,7 @@ public class SelectSockets {
 			while (it.hasNext()) {
 				SelectionKey key = it.next();
 				// Is a new connection coming in?
+				System.out.println("valid: " + key.isValid() + ", interestOps: " + key.interestOps());
 				if (key.isAcceptable()) {
 					ServerSocketChannel server = (ServerSocketChannel) key
 							.channel();
@@ -117,6 +118,8 @@ public class SelectSockets {
 			// Close channel on EOF, invalidates the key
 			socketChannel.close();
 		}
+        //继续读,  channel在读取失败关闭时会报错
+        registerChannel(key.selector(), key.channel(), SelectionKey.OP_READ);
 		//System.out.println(new String(buffer.array()));
 	} // ----------------------------------------------------------
 
